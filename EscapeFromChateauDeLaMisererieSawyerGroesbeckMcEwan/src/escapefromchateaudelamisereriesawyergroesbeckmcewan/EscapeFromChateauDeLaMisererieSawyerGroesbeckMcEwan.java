@@ -5,6 +5,7 @@
  */
 package escapefromchateaudelamisereriesawyergroesbeckmcewan;
 // Hello this is tim McEwan
+//I think you guys are pretty cool
 /**
  *
  * @author aaronsawyer
