@@ -11,7 +11,7 @@ import java.util.Objects;
 
 /**
  *
- * @author sudo
+ * @author: Tim McEwan
  */
 public class Map implements Serializable   {
    private int rowCount;
