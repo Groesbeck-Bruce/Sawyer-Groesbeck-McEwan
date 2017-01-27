@@ -6,6 +6,7 @@
 package model;
 
 import java.io.Serializable;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -15,7 +16,7 @@ import java.util.Objects;
 public class Player implements Serializable {
     private String name;
     private double bestTime;
-    // private List inventroy;
+//    private List<Item> inventroy;
 
     public Player() {
     }

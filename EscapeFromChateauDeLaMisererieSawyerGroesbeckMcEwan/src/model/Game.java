@@ -12,9 +12,10 @@ import model.Player;
  * @author bruce
  */
 public class Game implements Serializable {
+    
     private double totalTime;
-    Map map = new Map(); 
-    Player player = new Player();
+    private Map map; 
+    private Player player;
 
     public Game() {
     }
