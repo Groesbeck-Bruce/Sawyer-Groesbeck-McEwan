@@ -15,7 +15,7 @@ import java.util.Objects;
 public class Player implements Serializable {
     private String name;
     private double bestTime;
-    private List inventroy;
+    // private List inventroy;
 
     public Player() {
     }
@@ -36,26 +36,27 @@ public class Player implements Serializable {
         this.bestTime = bestTime;
     }
 
-    public List getInventroy() {
-        return inventroy;
-    }
+//    public List getInventroy() {
+//        return inventroy;
+//    }
 
-    public void setInventroy(List inventroy) {
-        this.inventroy = inventroy;
-    }
+//    public void setInventroy(List inventroy) {
+//        this.inventroy = inventroy;
+//    }
 
     @Override
     public int hashCode() {
         int hash = 7;
         hash = 17 * hash + Objects.hashCode(this.name);
         hash = 17 * hash + (int) (Double.doubleToLongBits(this.bestTime) ^ (Double.doubleToLongBits(this.bestTime) >>> 32));
-        hash = 17 * hash + Objects.hashCode(this.inventroy);
+        // hash = 17 * hash + Objects.hashCode(this.inventroy);
         return hash;
     }
-
+    
+    // ", inventroy=" + inventroy + add after besTime +
     @Override
     public String toString() {
-        return "Player{" + "name=" + name + ", bestTime=" + bestTime + ", inventroy=" + inventroy + '}';
+        return "Player{" + "name=" + name + ", bestTime=" + bestTime + '}';
     }
     
     
@@ -78,9 +79,9 @@ public class Player implements Serializable {
         if (!Objects.equals(this.name, other.name)) {
             return false;
         }
-        if (!Objects.equals(this.inventroy, other.inventroy)) {
-            return false;
-        }
+//        if (!Objects.equals(this.inventroy, other.inventroy)) {
+//            return false;
+//        }
         return true;
     }
     
