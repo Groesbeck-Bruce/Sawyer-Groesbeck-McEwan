@@ -9,6 +9,8 @@ package escapefromchateaudelamisereriesawyergroesbeckmcewan;
 
 import model.Player;
 import model.ArmoryLockChallenge;
+import model.LiquidChallenge;
+
 
 // This is Aaron
 // Hello everyone 
@@ -39,9 +41,22 @@ public class EscapeFromChateauDeLaMisererieSawyerGroesbeckMcEwan {
         firstLock.setSideB(4.2);
         firstLock.setSideC(4.3);
         firstLock.setTotal(12.6);
-
+        
         String lockInfo = firstLock.toString();
         System.out.println(lockInfo);
+      
+        // LiquidChallenge
+        LiquidChallenge firstLiquid = new LiquidChallenge();
+        
+        firstLiquid.setPlayProblem("Liquic Challenge Question");
+        
+        firstLiquid.setLength(5.2);
+        firstLiquid.setWidth(5.3);
+        firstLiquid.setHeight(5.5);
+        firstLiquid.setTotal(16.0);
+        
+        String liquidInfo = firstLiquid.toString();
+        System.out.println(liquidInfo);
         
     }
     
