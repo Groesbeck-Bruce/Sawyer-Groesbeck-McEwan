@@ -8,6 +8,7 @@ package escapefromchateaudelamisereriesawyergroesbeckmcewan;
 //I think you guys are pretty cool
 
 import model.Player;
+import model.ArmoryLockChallenge;
 
 // This is Aaron
 // Hello everyone 
@@ -29,6 +30,18 @@ public class EscapeFromChateauDeLaMisererieSawyerGroesbeckMcEwan {
         
         String playerInfo = playerOne.toString();
         System.out.println(playerInfo);
+        
+        // ArmoryLockChallenge
+        ArmoryLockChallenge firstLock = new ArmoryLockChallenge();
+
+        firstLock.setPlayProblem("Armory Lock Challenge Question");
+        firstLock.setSideA(4.1);
+        firstLock.setSideB(4.2);
+        firstLock.setSideC(4.3);
+        firstLock.setTotal(12.6);
+
+        String lockInfo = firstLock.toString();
+        System.out.println(lockInfo);
         
     }
     
