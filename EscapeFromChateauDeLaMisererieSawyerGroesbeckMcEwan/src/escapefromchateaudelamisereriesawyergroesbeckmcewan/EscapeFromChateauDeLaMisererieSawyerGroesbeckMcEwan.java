@@ -11,7 +11,8 @@ import model.Player;
 import model.Logic;
 import model.ArmoryLockChallenge;
 import model.LiquidChallenge;
-
+import model.Location;
+import model.Item;
 
 // This is Aaron
 // Hello everyone 
@@ -50,7 +51,7 @@ public class EscapeFromChateauDeLaMisererieSawyerGroesbeckMcEwan {
         String lockInfo = firstLock.toString();
         System.out.println(lockInfo);
       
-        // LiquidChallenge
+        // LiquidChallenge Bruce Groesbeck
         LiquidChallenge firstLiquid = new LiquidChallenge();
         
         firstLiquid.setPlayProblem("Liquic Challenge Question");
@@ -63,14 +64,25 @@ public class EscapeFromChateauDeLaMisererieSawyerGroesbeckMcEwan {
         String liquidInfo = firstLiquid.toString();
         System.out.println(liquidInfo);
         
-        //Location
-        
-        
-        
-        
-        
+        //Location Bruce Groesbeck
+        Location firstLocation = new Location();
+        firstLocation.setRow(2);
+        firstLocation.setColumn(7);
+        firstLocation.setVisited(true);
+        firstLocation.setWinGame(false);
+             
+               
         String locationInfo = firstLocation.toString();
         System.out.println(locationInfo);
+        
+        // Item Bruce Groesbeck
+        Item firstItem = new Item();
+        firstItem.setInventoryType("hammer");
+        firstItem.setQuantityInStock(4);
+        firstItem.setRequiredAmount(8);
+        
+        String itemInfo = firstItem.toString();
+        System.out.println(itemInfo);
     }
     
 }
