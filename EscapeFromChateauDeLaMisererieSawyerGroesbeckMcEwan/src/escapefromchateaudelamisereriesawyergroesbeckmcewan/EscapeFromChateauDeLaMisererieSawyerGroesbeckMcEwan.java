@@ -109,13 +109,17 @@ public class EscapeFromChateauDeLaMisererieSawyerGroesbeckMcEwan {
         wardenOne.setDecription("One mean Warden that likes to beat inmates");
         String wardenInfo = wardenOne.toString();
         System.out.println(wardenInfo);
+
+
+        // Map Tim McEwan
+        Map map = new Map();
+        map.setColumnCount(1);
+        map.setRowCount(1);
+
+        String locationNow = map.toString();
+        System.out.println(locationNow);
+
     }
-
-
-
-
-
-
 
 
 
