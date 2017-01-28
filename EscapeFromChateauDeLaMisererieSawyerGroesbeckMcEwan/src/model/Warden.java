@@ -6,7 +6,7 @@ import java.util.Objects;
 
 /**
  *
- * @author Tim McEwan hi Sofa 
+ * @author Tim McEwan
  */
 public class Warden implements Serializable {
    private String Name;
