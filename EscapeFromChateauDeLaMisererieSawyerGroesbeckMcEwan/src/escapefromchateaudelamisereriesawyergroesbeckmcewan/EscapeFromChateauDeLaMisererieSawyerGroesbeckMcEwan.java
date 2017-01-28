@@ -8,6 +8,7 @@ package escapefromchateaudelamisereriesawyergroesbeckmcewan;
 //I think you guys are pretty cool
 
 import model.Player;
+import model.Logic;
 import model.ArmoryLockChallenge;
 import model.LiquidChallenge;
 
@@ -33,7 +34,11 @@ public class EscapeFromChateauDeLaMisererieSawyerGroesbeckMcEwan {
         String playerInfo = playerOne.toString();
         System.out.println(playerInfo);
         
-        // ArmoryLockChallenge
+        // Logic Aaron Sawyer
+        Logic firstLogic = new Logic();
+        
+        
+        // ArmoryLockChallenge Aaron Sawyer
         ArmoryLockChallenge firstLock = new ArmoryLockChallenge();
 
         firstLock.setPlayProblem("Armory Lock Challenge Question");
