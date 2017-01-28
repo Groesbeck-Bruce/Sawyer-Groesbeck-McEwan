@@ -58,6 +58,14 @@ public class EscapeFromChateauDeLaMisererieSawyerGroesbeckMcEwan {
         String liquidInfo = firstLiquid.toString();
         System.out.println(liquidInfo);
         
+        //Location
+        
+        
+        
+        
+        
+        String locationInfo = firstLocation.toString();
+        System.out.println(locationInfo);
     }
     
 }
