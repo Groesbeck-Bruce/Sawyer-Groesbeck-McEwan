@@ -11,6 +11,7 @@ import model.Player;
 import model.Logic;
 import model.ArmoryLockChallenge;
 import model.LiquidChallenge;
+import model.AreaStoneChallenge;
 import model.Location;
 import model.Item;
 import model.Game;
@@ -57,7 +58,7 @@ public class EscapeFromChateauDeLaMisererieSawyerGroesbeckMcEwan {
         // LiquidChallenge Bruce Groesbeck
         LiquidChallenge firstLiquid = new LiquidChallenge();
         
-        firstLiquid.setPlayProblem("Liquic Challenge Question");
+        firstLiquid.setPlayProblem("Liquid Challenge Question");
         
         firstLiquid.setLength(5.2);
         firstLiquid.setWidth(5.3);
@@ -67,14 +68,28 @@ public class EscapeFromChateauDeLaMisererieSawyerGroesbeckMcEwan {
         String liquidInfo = firstLiquid.toString();
         System.out.println(liquidInfo);
         
+        //
+        AreaStoneChallenge firstStone = new AreaStoneChallenge();
+        
+        firstStone.setPlayProblem("Area Stone Question");
+        firstStone.setLength(6.2);
+        firstStone.setWidth(8.4);
+        firstStone.setHeight(4.2);
+        firstStone.setTotal(18.8);
+        
+        String stoneInfo = firstStone.toString();
+        System.out.println(stoneInfo);
+        
+               
+        
         //Location Bruce Groesbeck
         Location firstLocation = new Location();
         firstLocation.setRow(2);
         firstLocation.setColumn(7);
         firstLocation.setVisited(true);
         firstLocation.setWinGame(false);
+        
              
-               
         String locationInfo = firstLocation.toString();
         System.out.println(locationInfo);
         
