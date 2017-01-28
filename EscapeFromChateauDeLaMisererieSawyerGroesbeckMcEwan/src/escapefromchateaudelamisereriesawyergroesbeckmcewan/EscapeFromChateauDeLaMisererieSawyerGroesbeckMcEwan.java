@@ -13,6 +13,7 @@ import model.ArmoryLockChallenge;
 import model.LiquidChallenge;
 import model.Location;
 import model.Item;
+import model.Game;
 
 // This is Aaron
 // Hello everyone 
@@ -27,6 +28,8 @@ public class EscapeFromChateauDeLaMisererieSawyerGroesbeckMcEwan {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        // Aaron Sawyer Bruce Groesbeck Tim McEwan
         Player playerOne = new Player();
         
         playerOne.setName("Bruce");
@@ -83,6 +86,13 @@ public class EscapeFromChateauDeLaMisererieSawyerGroesbeckMcEwan {
         
         String itemInfo = firstItem.toString();
         System.out.println(itemInfo);
+        
+        // Game Bruce Groesbeck Aaron Sawyer Tim McEwan
+        Game firstGame = new Game();
+        firstGame.setTotalTime(7.8);
+        
+        String gameInfo = firstGame.toString();
+        System.out.println(gameInfo);
     }
     
 }
