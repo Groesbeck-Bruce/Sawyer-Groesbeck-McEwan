@@ -9,8 +9,8 @@ import java.util.Objects;
  * @author Tim McEwan
  */
 public class Warden implements Serializable {
-   private String Name;
-   private String  Decription;
+   private String name;
+   private String  description;
 
     public Warden() {
     }
@@ -18,14 +18,14 @@ public class Warden implements Serializable {
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 29 * hash + Objects.hashCode(this.Name);
-        hash = 29 * hash + Objects.hashCode(this.Decription);
+        hash = 29 * hash + Objects.hashCode(this.name);
+        hash = 29 * hash + Objects.hashCode(this.description);
         return hash;
     }
 
     @Override
     public String toString() {
-        return "Warden{" + "Name=" + Name + ", Decription=" + Decription + '}';
+        return "Warden{" + "Name=" + name + ", Decription=" + description + '}';
     }
 
     @Override
@@ -40,29 +40,29 @@ public class Warden implements Serializable {
             return false;
         }
         final Warden other = (Warden) obj;
-        if (!Objects.equals(this.Name, other.Name)) {
+        if (!Objects.equals(this.name, other.name)) {
             return false;
         }
-        if (!Objects.equals(this.Decription, other.Decription)) {
+        if (!Objects.equals(this.description, other.description)) {
             return false;
         }
         return true;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
-    public void setName(String Name) {
-        this.Name = Name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDecription() {
-        return Decription;
+        return description;
     }
 
-    public void setDecription(String Decription) {
-        this.Decription = Decription;
+    public void setDecription(String description) {
+        this.description = description;
     }
   
  }
