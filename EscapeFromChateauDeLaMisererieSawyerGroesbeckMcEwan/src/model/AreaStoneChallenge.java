@@ -24,7 +24,7 @@ public class AreaStoneChallenge implements Serializable {
 
     public String getPlayProblem() {
         return playProblem;
-
+    }
 
     public void setPlayProblem(String playProblem) {
         this.playProblem = playProblem;
