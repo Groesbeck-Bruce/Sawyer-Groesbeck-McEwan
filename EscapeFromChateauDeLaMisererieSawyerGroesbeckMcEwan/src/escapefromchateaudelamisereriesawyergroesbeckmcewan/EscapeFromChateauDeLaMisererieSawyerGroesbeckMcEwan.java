@@ -61,7 +61,7 @@ public class EscapeFromChateauDeLaMisererieSawyerGroesbeckMcEwan {
         String liquidInfo = firstLiquid.toString();
         System.out.println(liquidInfo);
 
-        //
+        // Tim McEwan
         AreaStoneChallenge firstStone = new AreaStoneChallenge();
 
         firstStone.setPlayProblem("Area Stone Question");
