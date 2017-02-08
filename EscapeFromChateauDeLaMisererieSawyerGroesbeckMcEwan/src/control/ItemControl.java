@@ -13,11 +13,7 @@ public class ItemControl {
     // Take in itemInventory aray and location number
     public boolean requiredKeys(int itemInventory[], int location) {
         // See if index is not 0 (0 means no key for location)
-        if (itemInventory[location - 1] != 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return itemInventory[location - 1] != 0;
     }
     
 }
