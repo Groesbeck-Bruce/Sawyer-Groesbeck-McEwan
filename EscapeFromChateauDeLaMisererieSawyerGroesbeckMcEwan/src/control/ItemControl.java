@@ -12,7 +12,7 @@ package control;
 public class ItemControl {
 
     public boolean requiredKeys(int itemInventory[], int location) {
-        if (itemInventory[location - 1 != null]) {
+        if (itemInventory[location - 1] != 0) {
             return true;
         } else {
             return false;
