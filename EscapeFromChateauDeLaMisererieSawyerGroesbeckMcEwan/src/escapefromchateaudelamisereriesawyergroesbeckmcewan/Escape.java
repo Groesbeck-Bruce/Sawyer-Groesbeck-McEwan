@@ -16,7 +16,7 @@ import model.*;
  *
  * @author aaronsawyer
  */
-public class EscapeFromChateauDeLaMisererieSawyerGroesbeckMcEwan {
+public class Escape {
 
     /**
      * @param args the command line arguments
