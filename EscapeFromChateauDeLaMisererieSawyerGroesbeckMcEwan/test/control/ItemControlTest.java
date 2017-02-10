@@ -22,14 +22,35 @@ public class ItemControlTest {
      */
     @Test
     public void testRequiredKeys() {
-        System.out.println("requiredKeys");
-        int[] itemInventory = {1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0};
-        int location = 12;
+        //Test #1        
+        System.out.println("Test #1");
+        int[] itemInventory = {1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0};
+        int location = 4;
         ItemControl instance = new ItemControl();
-        boolean expResult = false;
+        boolean expResult = true;
         boolean result = instance.requiredKeys(itemInventory, location);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
+        
+        //Test #2
+        System.out.println("Test #2");
+        location = 12;
+        expResult = false;
+        result = instance.requiredKeys(itemInventory, location);
+        assertEquals(expResult, result);
+        
+        //Test #3
+        System.out.println("Test #3");
+        location = 1;
+        expResult = true;
+        result = instance.requiredKeys(itemInventory, location);
+        assertEquals(expResult, result);
+        
+        //Test #4
+        System.out.println("Test #4");
+        location = 10;
+        expResult = false;
+        result = instance.requiredKeys(itemInventory, location);
+        assertEquals(expResult, result);
     }
     
 }
