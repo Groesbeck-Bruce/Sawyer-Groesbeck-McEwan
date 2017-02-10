@@ -4,18 +4,18 @@
  * and open the template in the editor.
  */
 package model;
+
 import java.io.Serializable;
 import java.util.Objects;
-
-
 
 /**
  *
  * @author: Tim McEwan
  */
-public class Map implements Serializable   {
-   private int rowCount;
-   private int columnCount;
+public class Map implements Serializable {
+
+    private int rowCount;
+    private int columnCount;
 
     public Map() {
     }
@@ -35,8 +35,7 @@ public class Map implements Serializable   {
     public void setColumnCount(int columnCount) {
         this.columnCount = columnCount;
     }
-   
-    
+
     @Override
     public int hashCode() {
         int hash = 7;
@@ -50,8 +49,6 @@ public class Map implements Serializable   {
         return "Map{" + "rowCount=" + rowCount + ", columnCount=" + columnCount + '}';
     }
 
-    
-    
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -72,14 +69,5 @@ public class Map implements Serializable   {
         }
         return true;
     }
-    
-    
 
-
-  
-   
-   
-   
-    
-    
 }

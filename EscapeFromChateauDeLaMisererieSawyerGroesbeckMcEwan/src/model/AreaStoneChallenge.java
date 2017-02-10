@@ -6,13 +6,13 @@ import java.util.Objects;
  *
  * @author Tim McEwan
  */
-
-
 package model;
 
 import java.io.Serializable;
 import java.util.Objects;
+
 public class AreaStoneChallenge implements Serializable {
+
     private String playProblem;
     private double length;
     private double width;
@@ -108,6 +108,4 @@ public class AreaStoneChallenge implements Serializable {
         return true;
     }
 
-
 }
-

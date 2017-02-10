@@ -4,17 +4,19 @@
  * and open the template in the editor.
  */
 package model;
+
 import java.io.Serializable;
 import java.util.Objects;
 import model.Player;
+
 /**
  *
  * @author bruce
  */
 public class Game implements Serializable {
-    
+
     private double totalTime;
-    private Map map; 
+    private Map map;
     private Player player;
 
     public Game() {
@@ -58,8 +60,6 @@ public class Game implements Serializable {
         return "Game{" + "totalTime=" + totalTime + ", map=" + map + ", player=" + player + '}';
     }
 
-    
-    
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -84,5 +84,4 @@ public class Game implements Serializable {
         return true;
     }
 
-    
 }

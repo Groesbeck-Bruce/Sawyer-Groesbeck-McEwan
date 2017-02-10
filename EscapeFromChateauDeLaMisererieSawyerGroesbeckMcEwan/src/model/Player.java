@@ -14,13 +14,14 @@ import java.util.Objects;
  * @author aaronsawyer
  */
 public class Player implements Serializable {
+
     private String name;
     private double bestTime;
 //    private List<Item> inventroy;
 
     public Player() {
     }
-    
+
     public String getName() {
         return name;
     }
@@ -40,11 +41,9 @@ public class Player implements Serializable {
 //    public List getInventroy() {
 //        return inventroy;
 //    }
-
 //    public void setInventroy(List inventroy) {
 //        this.inventroy = inventroy;
 //    }
-
     @Override
     public int hashCode() {
         int hash = 7;
@@ -53,14 +52,12 @@ public class Player implements Serializable {
         // hash = 17 * hash + Objects.hashCode(this.inventroy);
         return hash;
     }
-    
+
     // ", inventroy=" + inventroy + add after besTime +
     @Override
     public String toString() {
         return "Player{" + "name=" + name + ", bestTime=" + bestTime + '}';
     }
-    
-    
 
     @Override
     public boolean equals(Object obj) {
@@ -85,8 +82,5 @@ public class Player implements Serializable {
 //        }
         return true;
     }
-    
-    
-    
-    
+
 }

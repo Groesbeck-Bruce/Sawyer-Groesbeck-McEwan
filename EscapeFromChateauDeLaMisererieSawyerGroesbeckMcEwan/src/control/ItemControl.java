@@ -10,10 +10,11 @@ package control;
  * @author aaronsawyer
  */
 public class ItemControl {
+
     // Take in itemInventory aray and location number
     public boolean requiredKeys(int itemInventory[], int location) {
         // See if index is not 0 (0 means no key for location)
         return itemInventory[location - 1] != 0;
     }
-    
+
 }

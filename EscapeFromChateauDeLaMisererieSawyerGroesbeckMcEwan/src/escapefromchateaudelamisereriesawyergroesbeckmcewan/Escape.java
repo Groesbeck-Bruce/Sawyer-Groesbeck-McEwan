@@ -22,19 +22,18 @@ public class Escape {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+
         // Aaron Sawyer Bruce Groesbeck Tim McEwan
         Player playerOne = new Player();
-        
+
         playerOne.setName("Bruce");
         playerOne.setBestTime(5.32);
-        
+
         String playerInfo = playerOne.toString();
         System.out.println(playerInfo);
 
         // Logic Aaron Sawyer
         Logic firstLogic = new Logic();
-
 
         // ArmoryLockChallenge Aaron Sawyer
         ArmoryLockChallenge firstLock = new ArmoryLockChallenge();
@@ -73,15 +72,12 @@ public class Escape {
         String stoneInfo = firstStone.toString();
         System.out.println(stoneInfo);
 
-
-
         //Location Bruce Groesbeck
         Location firstLocation = new Location();
         firstLocation.setRow(2);
         firstLocation.setColumn(7);
         firstLocation.setVisited(true);
         firstLocation.setWinGame(false);
-
 
         String locationInfo = firstLocation.toString();
         System.out.println(locationInfo);
@@ -102,14 +98,12 @@ public class Escape {
         String gameInfo = firstGame.toString();
         System.out.println(gameInfo);
 
-
         // Warden Tim McEWan
         Warden wardenOne = new Warden();
         wardenOne.setName("Billy the Warden");
         wardenOne.setDecription("One mean Warden that likes to beat inmates");
         String wardenInfo = wardenOne.toString();
         System.out.println(wardenInfo);
-
 
         // Map Tim McEwan
         Map map = new Map();
@@ -120,7 +114,5 @@ public class Escape {
         System.out.println(locationNow);
 
     }
-
-
 
 }

@@ -6,6 +6,7 @@
 package model;
 
 import java.io.Serializable;
+
 /**
  *
  * @author bruce
@@ -19,8 +20,6 @@ public class Location implements Serializable {
 
     public Location() {
     }
-    
-    
 
     public int getRow() {
         return row;
@@ -55,7 +54,7 @@ public class Location implements Serializable {
     }
 
     @Override
-    public int hashCode () {
+    public int hashCode() {
         int hash = 5;
         hash = 41 * hash + this.row;
         hash = 41 * hash + this.column;
@@ -95,7 +94,5 @@ public class Location implements Serializable {
         }
         return true;
     }
-    
-    
-    
+
 }

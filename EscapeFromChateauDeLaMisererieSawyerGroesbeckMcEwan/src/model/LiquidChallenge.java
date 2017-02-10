@@ -13,7 +13,7 @@ import java.util.Objects;
  * @author bruce
  */
 public class LiquidChallenge implements Serializable {
-    
+
     private String playProblem;
     private double length;
     private double width;
@@ -22,8 +22,6 @@ public class LiquidChallenge implements Serializable {
 
     public LiquidChallenge() {
     }
-    
-    
 
     public String getPlayProblem() {
         return playProblem;
@@ -66,7 +64,7 @@ public class LiquidChallenge implements Serializable {
     }
 
     @Override
-    public int hashCode () {
+    public int hashCode() {
         int hash = 3;
         hash = 71 * hash + Objects.hashCode(this.playProblem);
         hash = 71 * hash + (int) (Double.doubleToLongBits(this.length) ^ (Double.doubleToLongBits(this.length) >>> 32));
@@ -110,7 +108,5 @@ public class LiquidChallenge implements Serializable {
         }
         return true;
     }
-    
-    
-    
+
 }

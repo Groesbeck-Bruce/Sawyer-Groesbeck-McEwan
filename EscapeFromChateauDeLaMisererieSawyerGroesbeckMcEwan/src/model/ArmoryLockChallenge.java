@@ -8,6 +8,7 @@ import java.util.Objects;
  * @author aaronsawyer
  */
 public class ArmoryLockChallenge implements Serializable {
+
     private String playProblem;
     private double sideA;
     private double sideB;

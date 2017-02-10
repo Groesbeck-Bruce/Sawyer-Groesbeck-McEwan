@@ -1,4 +1,3 @@
-
 package model;
 
 import java.io.Serializable;
@@ -9,8 +8,9 @@ import java.util.Objects;
  * @author Tim McEwan
  */
 public class Warden implements Serializable {
-   private String name;
-   private String  description;
+
+    private String name;
+    private String description;
 
     public Warden() {
     }
@@ -64,5 +64,5 @@ public class Warden implements Serializable {
     public void setDecription(String description) {
         this.description = description;
     }
-  
- }
+
+}

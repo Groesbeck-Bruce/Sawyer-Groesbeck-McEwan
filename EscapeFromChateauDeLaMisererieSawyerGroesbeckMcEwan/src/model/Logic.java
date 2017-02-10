@@ -2,11 +2,13 @@ package model;
 
 import java.io.Serializable;
 import java.util.Objects;
+
 /**
  *
  * @author aaronsawyer
  */
 public class Logic implements Serializable {
+
     private AreaStoneChallenge areaStoneChallenge;
     private LiquidChallenge liquidChallenge;
     private ArmoryLockChallenge armoryLockChallenge;
@@ -14,8 +16,6 @@ public class Logic implements Serializable {
 
     public Logic() {
     }
-
-
 
     public AreaStoneChallenge getAreaStoneChallenge() {
         return areaStoneChallenge;
@@ -90,7 +90,5 @@ public class Logic implements Serializable {
         }
         return true;
     }
-
-
 
 }
