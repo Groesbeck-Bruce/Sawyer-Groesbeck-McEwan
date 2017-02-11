@@ -7,9 +7,35 @@ package control;
 
 /**
  *
- * @author bruce
+ * @author tim
  */
 public class GameControl {
-  
-        
+       
+    private static class startNewGame {
+
+        public startNewGame() {
+        } 
+    }
+     private static class intializeMap { 
+         
+         public intializeMap () {
+     }  
 }
+     private static class saveGame {
+         
+         public saveGame () {
+     }
+     private static class retrieveGame {
+         
+         public retrieveGame () {
+             
+         }
+         
+     private static class createNewPlayer {
+         
+         public createNewPlayer () {
+     }    
+     }  
+     }
+     }
+     }
