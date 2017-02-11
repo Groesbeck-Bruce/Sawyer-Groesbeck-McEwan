@@ -28,13 +28,12 @@ public class GameControl {
     private static class saveGame {
 
         public saveGame() {
-            Player playerOne = new Player();
+
         }
 
         private static class retrieveGame {
 
             public retrieveGame() {
-                Player playerOne = new Player();
 
             }
 
