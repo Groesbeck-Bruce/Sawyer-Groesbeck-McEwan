@@ -5,37 +5,44 @@
  */
 package control;
 
+import model.*;
+
 /**
  *
  * @author tim
  */
 public class GameControl {
-       
+
     private static class startNewGame {
 
         public startNewGame() {
-        } 
+        }
     }
-     private static class intializeMap { 
-         
-         public intializeMap () {
-     }  
+
+    private static class intializeMap {
+
+        public intializeMap() {
+        }
+    }
+
+    private static class saveGame {
+
+        public saveGame() {
+            Player playerOne = new Player();
+        }
+
+        private static class retrieveGame {
+
+            public retrieveGame() {
+                Player playerOne = new Player();
+
+            }
+
+            private static class createNewPlayer {
+
+                public createNewPlayer() {
+                }
+            }
+        }
+    }
 }
-     private static class saveGame {
-         
-         public saveGame () {
-     }
-     private static class retrieveGame {
-         
-         public retrieveGame () {
-             
-         }
-         
-     private static class createNewPlayer {
-         
-         public createNewPlayer () {
-     }    
-     }  
-     }
-     }
-     }

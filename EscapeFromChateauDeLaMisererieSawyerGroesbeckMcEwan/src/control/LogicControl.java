@@ -19,13 +19,12 @@ public class LogicControl {
 
     public double liquidChallenge(int height, int width, int length) {
         int[] liquidChallenge = null;
-        return liquidChallenge [height + width + length];
+        return liquidChallenge[height + width + length];
 
     }
 
-   
-    public double armoryLockChallenge(double sideA, double sideB, double sideC){
-        double result = sideA + sideB + sideC;    
+    public double armoryLockChallenge(double sideA, double sideB, double sideC) {
+        double result = sideA + sideB + sideC;
         return result;
     }
 
