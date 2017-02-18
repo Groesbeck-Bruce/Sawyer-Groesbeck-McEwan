@@ -13,6 +13,11 @@ import model.*;
  */
 public class GameControl {
 
+    public static Player createPlayer(String playersName) {
+        System.out.println("\n*** createPlayer() function fired ***");
+        return new Player();
+    }
+
     private static class startNewGame {
 
         public startNewGame() {
