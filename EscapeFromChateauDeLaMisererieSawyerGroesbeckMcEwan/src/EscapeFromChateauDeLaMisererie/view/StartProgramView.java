@@ -69,5 +69,15 @@ public class StartProgramView {
             System.out.println("\nError creating the player.");
             return false;
         }
+        this.displayNewView();
+            return true; //Success
+            
+            
     }
+
+    private void displayNewView() {
+        System.out.println("\n displayNextView() called");
+    }
+   
 }
+
