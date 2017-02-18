@@ -13,9 +13,15 @@ import model.*;
  */
 public class GameControl {
 
-    public static Player createPlayer(String playersName) {
-        System.out.println("\n*** createPlayer() function fired ***");
-        return new Player();
+    public static Player createPlayer(String name) {
+        if (name == null) {
+            return null;
+        }
+        Player player = new Player();
+        player.setName(name);
+        
+        CuriousWorkmanship.setName(name);
+        return player;
     }
 
     private static class startNewGame {
