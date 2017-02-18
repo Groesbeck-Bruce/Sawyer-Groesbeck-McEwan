@@ -10,24 +10,37 @@ package EscapeFromChateauDeLaMisererie.view;
  * @author sudo
  */
 public class StartProgramView {
-    private String promptMessage; 
-    
-    
+        private String promptMessage;
     public StartProgramView() {
-    this.promptMessage = "\nPlease enter your name: "; 
-    this.displayBanner();
+        this.promptMessage = "\nPlease enter your name";
+        this.displayBanner();
     }
 
     private void displayBanner() {
-        System.out.println(
-                "Description welcome welcome");
+        System.out.println("Hello world this is our description of the game");
     }
 
     public void displayStartProgramView() {
-        throw new UnsupportedOperationException("\n*** displayStartProgram() function called ***"); //To change body of generated methods, choose Tools | Templates.
+
+        boolean done = false;
+        do {
+            String playersName = this.getPlayersName();
+            if (playersName.toUpperCase().equals("Q"))
+                return;
+            
+            done = this.doAction(playersName);
+        
+        } while (!done);
+            
     }
 
+    private String getPlayersName() {
+        System.out.println("\n*** getPlayerName() called **");
+        return "joe cool";
+    }
 
-
-
+    private boolean doAction(String playersName) {
+        System.out.println("\n*** doAction() called **");
+        return true;
+    }
 }
