@@ -6,7 +6,10 @@
 package escapefromchateaudelamisereriesawyergroesbeckmcewan;
 // Hello this is tim McEwan
 //I think you guys are pretty cool
+
 import EscapeFromChateauDeLaMisererie.view.StartProgramView;
+
+
 
 
 // This is Aaron
@@ -22,12 +25,10 @@ public class Escape {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+ 
         StartProgramView startProgramView = new StartProgramView();
         startProgramView.displayStartProgramView();
 
-        
- 
     }
 
 }       
