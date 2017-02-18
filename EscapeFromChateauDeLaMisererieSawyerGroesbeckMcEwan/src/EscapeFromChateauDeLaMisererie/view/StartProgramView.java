@@ -23,6 +23,10 @@ public class StartProgramView {
                 "Description welcome welcome");
     }
 
+    public void displayStartProgramView() {
+        throw new UnsupportedOperationException("\n*** displayStartProgram() function called ***"); //To change body of generated methods, choose Tools | Templates.
+    }
+
 
 
 

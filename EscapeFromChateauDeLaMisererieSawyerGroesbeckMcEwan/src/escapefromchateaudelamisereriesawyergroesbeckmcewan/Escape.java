@@ -8,7 +8,6 @@ package escapefromchateaudelamisereriesawyergroesbeckmcewan;
 //I think you guys are pretty cool
 import EscapeFromChateauDeLaMisererie.view.StartProgramView;
 
-import model.*;
 
 // This is Aaron
 // Hello everyone 
@@ -28,7 +27,10 @@ public class Escape {
         startProgramView.displayStartProgramView();
 
         
-        
+ 
+    }
+
+}       
         
 //        // Aaron Sawyer Bruce Groesbeck Tim McEwan
 //        Player playerOne = new Player();
@@ -119,8 +121,3 @@ public class Escape {
 //
 //        String locationNow = map.toString();
 //        System.out.println(locationNow);
-
-
-    }
-
-}
