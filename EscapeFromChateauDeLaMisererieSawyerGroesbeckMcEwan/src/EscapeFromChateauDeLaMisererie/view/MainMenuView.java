@@ -5,9 +5,11 @@
  */
 package EscapeFromChateauDeLaMisererie.view;
 
+import java.util.Scanner;
+
 /**
  *
- * @author sudo
+ * @author Tim McEwan
  */
 public class MainMenuView {
   private String menu;
@@ -27,25 +29,60 @@ public class MainMenuView {
           }
     void displayMainMenueView() {
       
-        boolean done = false;
-        do {
-               String menuOption = this.getMenuOption();
-               if (menuOption.toUpperCase().equals("Q"))
-                   return;
-               
-               done = this.doAction(menuOption);
-        } while (!done);
+        System.out.println("\n" + this.menu);
+        String input = this.getInput();
     }
-    private String getMenuOption() {
-        System.out.println("\n**** getMenuOption() fired");
-        return "N";
-    }
-    private boolean doAction(String menuOption) {
-           System.out.println("\n*** doAction() fired ***");
-           return true;
-    }
+    private String getInput() {
+        Scanner keyboard = new Scanner(System.in);
+        String value = "";
+            System.out.println("\n" + this.menu);
+            
+            value = keyboard.nextLine(); 
+            value = value.trim();
+            
+            return value;
+        }
 
+private boolean doAction(String getInput) {
+
+            getInput = getInput.toUpperCase();
+            
+            switch (getInput) {
+                case "N":
+                    this.startNewGame();
+                    break;
+                   case "G":
+                    this.startExistingGame();
+                    break;
+                case "H":
+                    this.displayMainMenueView();
+                    break;
+                case "S":
+                    this.saveGame();
+                    break;
+                default:
+                      System.out.println("\n*** Invalid Key *** Try again");
+            }
+            return false;
+    }
+        
+        
 
     
+    
+
+private void startNewGame() {
+    System.out.println("*** startNewGame function called ***");
+}
+private void startExistingGame() {
+    System.out.println("*** startExistingGame function called ***");
+}
+private void saveGame() {
+    System.out.println("*** startExistingGame function called **");
+}
+private void displayHelpMenu() {
+    System.out.println("*** displayHelpMenue function called ***");
+}
+   
 
 }
