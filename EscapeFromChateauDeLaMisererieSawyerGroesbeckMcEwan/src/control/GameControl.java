@@ -5,6 +5,8 @@
  */
 package control;
 
+
+import escapefromchateaudelamisereriesawyergroesbeckmcewan.Escape;
 import model.*;
 
 /**
@@ -20,7 +22,7 @@ public class GameControl {
         Player player = new Player();
         player.setName(name);
         
-        CuriousWorkmanship.setName(name);
+        Escape.setName(name);
         return player;
     }
 

@@ -1,14 +1,18 @@
+package escapefromchateaudelamisereriesawyergroesbeckmcewan;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package escapefromchateaudelamisereriesawyergroesbeckmcewan;
+
 // Hello this is tim McEwan
 //I think you guys are pretty cool
 
 import EscapeFromChateauDeLaMisererie.view.StartProgramView;
 
+import model.Player;
+import model.Game;
 
 
 
@@ -20,6 +24,26 @@ import EscapeFromChateauDeLaMisererie.view.StartProgramView;
  * @author aaronsawyer
  */
 public class Escape {
+private static Game currentGame = null;
+private static Player player = null;
+
+    public static Game getCurrentGame() {
+        return currentGame;
+    }
+
+    public static void setCurrentGame(Game currentGame) {
+        Escape.currentGame = currentGame;
+    }
+
+    public static Player getPlayer() {
+        return player;
+    }
+
+    public static void setPlayer(Player player) {
+        Escape.player = player;
+    }
+
+
 
     /**
      * @param args the command line arguments
@@ -29,6 +53,14 @@ public class Escape {
         StartProgramView startProgramView = new StartProgramView();
         startProgramView.displayStartProgramView();
 
+    }
+
+//    public static void setName(String name) {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
+
+    public static void setName(String name) {
+        System.out.println("This fired setName");
     }
 
 }       
