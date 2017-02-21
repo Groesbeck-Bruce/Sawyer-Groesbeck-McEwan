@@ -27,7 +27,7 @@ public class MainMenuView {
             + "\n------------------------------";
 
           }
-    void displayMainMenueView() {
+    void displayMainMenuView() {
       
         System.out.println("\n" + this.menu);
         String input = this.getInput();

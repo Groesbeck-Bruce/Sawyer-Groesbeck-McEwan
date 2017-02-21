@@ -15,7 +15,9 @@ import model.*;
  */
 public class GameControl {
 
-    public static Player createPlayer(String name) {
+    private static String name;
+
+    public static Player createPlayer(String playersName) {
         if (name == null) {
             return null;
         }
@@ -24,21 +26,35 @@ public class GameControl {
         
         Escape.setName(name);
         return player;
+        Escape.setPlayer(player);
+        return player;
     }
 
-    private static class startNewGame {
+    public static void createNewGame(Player player) {
+        System.out.println("\n*** createNewGame stub function called ***");
+    }
+
+    /**
+     *
+     * @param player
+     */
+    //public static void createNewGame(Player player) {
+        //System.out.println();
+    }
+
+    class startNewGame {
 
         public startNewGame() {
         }
     }
 
-    private static class intializeMap {
+    class intializeMap {
 
         public intializeMap() {
         }
     }
 
-    private static class saveGame {
+    class saveGame {
 
         public saveGame() {
 
@@ -57,4 +73,3 @@ public class GameControl {
             }
         }
     }
-}

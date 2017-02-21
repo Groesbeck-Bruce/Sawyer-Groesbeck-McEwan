@@ -5,7 +5,7 @@
  */
 package EscapeFromChateauDeLaMisererie.view;
 
-import control.GameControl;
+//import control.GameControl;
 import java.util.Scanner;
 import model.Player;
 
@@ -21,8 +21,12 @@ public class StartProgramView {
     }
 
     private void displayBanner() {
-        System.out.println("Hello world this is our description of the game");
-    }
+        System.out.println("Hello and welcome to the Chateau De La Misererie. "
+                + "You are a prisoner here and need to collect the keys needed"
+                + "to escape from the chateau. There are many rooms that you can "
+                + "move to as you plan you escape route. Remember to always watch"
+                + "out for the warden and guards as you collect your keys");
+   
 
     public void displayStartProgramView() {
 
