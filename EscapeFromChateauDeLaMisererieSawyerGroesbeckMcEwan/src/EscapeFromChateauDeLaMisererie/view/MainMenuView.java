@@ -88,6 +88,10 @@ private void displayHelpMenu() {
     System.out.println("*** displayHelpMenue function called ***");
 }
 
+    void displayMainMenueView() {
+        System.out.println("**** displayMainMenuView *******");
+    }
+
 
    
 

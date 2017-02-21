@@ -5,7 +5,7 @@
  */
 package EscapeFromChateauDeLaMisererie.view;
 
-//import control.GameControl;
+import control.GameControl;
 import java.util.Scanner;
 import model.Player;
 
