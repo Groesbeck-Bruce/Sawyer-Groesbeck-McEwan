@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author Tim McEwan
  */
 public class MainMenuView {
-  private String menu;
+  private final String menu;
   
   public MainMenuView() {
   this.menu = "\n"
@@ -31,6 +31,10 @@ public class MainMenuView {
       
         System.out.println("\n" + this.menu);
         String input = this.getInput();
+        
+        doAction(input);
+        
+ 
     }
     private String getInput() {
         Scanner keyboard = new Scanner(System.in);
@@ -43,11 +47,11 @@ public class MainMenuView {
             return value;
         }
 
-private boolean doAction(String getInput) {
+private boolean doAction(String input) {
 
-            getInput = getInput.toUpperCase();
+            input = input.toUpperCase();
             
-            switch (getInput) {
+            switch (input) {
                 case "N":
                     this.startNewGame();
                     break;
@@ -55,7 +59,7 @@ private boolean doAction(String getInput) {
                     this.startExistingGame();
                     break;
                 case "H":
-                    this.displayMainMenueView();
+                    this.displayHelpMenu();
                     break;
                 case "S":
                     this.saveGame();
@@ -83,6 +87,8 @@ private void saveGame() {
 private void displayHelpMenu() {
     System.out.println("*** displayHelpMenue function called ***");
 }
+
+
    
 
 }
