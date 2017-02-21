@@ -38,7 +38,7 @@ public class MainMenuView {
     }
     private String getInput() {
         Scanner keyboard = new Scanner(System.in);
-        String value = "";
+        String value = "player";
             System.out.println("\n" + this.menu);
             
             value = keyboard.nextLine(); 
