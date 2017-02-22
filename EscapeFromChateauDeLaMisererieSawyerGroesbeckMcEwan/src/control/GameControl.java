@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package control;
 
 
@@ -15,9 +11,7 @@ import model.*;
  */
 public class GameControl {
 
-    private static String name;
-
-    public static Player createPlayer(String playersName) {
+    public static Player createPlayer(String name) {
         if (name == null) {
             return null;
         }
@@ -25,35 +19,22 @@ public class GameControl {
         player.setName(name);
         
         Escape.setName(name);
-        Escape.setPlayer(player);
         return player;
     }
 
-    public static void createNewGame(Player player) {
-        System.out.println("\n*** createNewGame stub function called ***");
-    }
-
-    /**
-     *
-     * @param player
-     */
-    //public static void createNewGame(Player player) {
-        //System.out.println();
-    }
-
-    class startNewGame {
+    private static class startNewGame {
 
         public startNewGame() {
         }
     }
 
-    class intializeMap {
+    private static class intializeMap {
 
         public intializeMap() {
         }
     }
 
-    class saveGame {
+    private static class saveGame {
 
         public saveGame() {
 
@@ -72,3 +53,5 @@ public class GameControl {
             }
         }
     }
+}
+

@@ -27,7 +27,7 @@ public class MainMenuView {
             + "\n------------------------------";
 
           }
-    void displayMainMenuView() {
+    void displayMainMenueView() {
       
         System.out.println("\n" + this.menu);
         String input = this.getInput();
@@ -38,8 +38,8 @@ public class MainMenuView {
     }
     private String getInput() {
         Scanner keyboard = new Scanner(System.in);
-        String value = "player";
-            System.out.println("\n" + this.menu);
+        String value = "";
+
             
             value = keyboard.nextLine(); 
             value = value.trim();
@@ -88,9 +88,7 @@ private void displayHelpMenu() {
     System.out.println("*** displayHelpMenue function called ***");
 }
 
-    void displayMainMenueView() {
-        System.out.println("**** displayMainMenuView *******");
-    }
+
 
 
    
