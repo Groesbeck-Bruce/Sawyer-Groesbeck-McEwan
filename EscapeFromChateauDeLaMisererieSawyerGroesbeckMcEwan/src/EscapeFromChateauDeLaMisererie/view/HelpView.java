@@ -67,10 +67,10 @@ private boolean doAction(String input) {
             input = input.toUpperCase();
             
             switch (input) {
-                case "Y":
+                case "N":
                     this.stayOnHelp();
                     break;
-                   case "N":
+                   case "Y":
                     this.stayMainMenu();
                     break;
 
