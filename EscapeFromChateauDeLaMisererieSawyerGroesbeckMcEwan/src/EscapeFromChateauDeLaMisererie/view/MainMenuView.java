@@ -85,7 +85,9 @@ private void saveGame() {
     System.out.println("*** startExistingGame function called **");
 }
 private void displayHelpMenu() {
-    System.out.println("*** displayHelpMenue function called ***");
+            HelpView helpMenuView = new HelpView();
+
+        helpMenuView.displayHelpMenueView();
 }
 
 
