@@ -10,8 +10,6 @@ package escapefromchateaudelamisereriesawyergroesbeckmcewan;
 //I think you guys are pretty cool
 
 import EscapeFromChateauDeLaMisererie.view.StartProgramView;
-import EscapeFromChateauDeLaMisererie.view.HelpMenuView;
-import EscapeFromChateauDeLaMisererie.view.MainMenuView;
 import model.Player;
 import model.Game;
 

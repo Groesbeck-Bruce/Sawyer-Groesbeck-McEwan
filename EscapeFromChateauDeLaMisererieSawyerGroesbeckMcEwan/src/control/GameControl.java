@@ -25,7 +25,6 @@ public class GameControl {
         player.setName(name);
         
         Escape.setName(name);
-        return player;
         Escape.setPlayer(player);
         return player;
     }
