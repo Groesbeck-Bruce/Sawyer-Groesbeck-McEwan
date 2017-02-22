@@ -13,86 +13,77 @@ import java.util.Scanner;
  */
 public class HelpView {
 
+    /**
+     *
+     * @author Tim McEwan
+     */
+    private final String helpmenu;
 
-   
+    public HelpView() {
+        this.helpmenu = "\n"
+                + "\n------------------------------"
+                + "\n | Help                  |"
+                + "\n------------------------------"
+                + "\n  Escape is your overall objective."
+                + "\n  Solve problems to get through "
+                + "\n  the next area.  Keep an eye out"
+                + "\n  though because the Warden is out"
+                + "\n  to get you. Good luck"
+                + "\n------------------------------"
+                + "\n------------------------------"
+                + "\n | Go back to main menu?      |"
+                + "\n------------------------------"
+                + "\n Y for yes"
+                + "\n N for no";
 
-/**
- *
- * @author Tim McEwan
- */
+    }
 
-  private final String helpmenu;
-  
-  public HelpView() {
-  this.helpmenu = "\n"
-            + "\n------------------------------"
-            + "\n | Help                  |"
-            + "\n------------------------------"
-            + "\n  Escape is your overall objective."
-            + "\n  Solve problems to get through "
-            + "\n  the next area.  Keep an eye out"
-            + "\n  though because the Warden is out"
-            + "\n  to get you. Good luck"
-            + "\n------------------------------"
-            + "\n------------------------------"
-            + "\n | Go back to main menu?      |"
-            + "\n------------------------------"
-            + "\n Y for yes"
-            + "\n N for no";
-          
-
-          }
-  
-      void displayHelpMenueView() {
-             System.out.println("\n" + this.helpmenu);
+    void displayHelpMenueView() {
+        System.out.println("\n" + this.helpmenu);
         String input = this.getInput();
-        
+
         doAction(input);
-        
+
     }
 
     private String getInput() {
         Scanner keyboard = new Scanner(System.in);
         String value = "";
 
-            
-            value = keyboard.nextLine(); 
-            value = value.trim();
-            
-            return value;
-        }
+        value = keyboard.nextLine();
+        value = value.trim();
 
-private boolean doAction(String input) {
-
-            input = input.toUpperCase();
-            
-            switch (input) {
-                case "N":
-                    this.stayOnHelp();
-                    break;
-                   case "Y":
-                    this.stayMainMenu();
-                    break;
-
-                default:
-                      System.out.println("\n*** Invalid Key *** Try again");
-            }
-            return false;
+        return value;
     }
 
-        private void stayOnHelp() {
-            HelpView helpMenuView = new HelpView();
+    private boolean doAction(String input) {
 
-            helpMenuView.displayHelpMenueView();
+        input = input.toUpperCase();
+
+        switch (input) {
+            case "N":
+                this.stayOnHelp();
+                break;
+            case "Y":
+                this.stayMainMenu();
+                break;
+
+            default:
+                System.out.println("\n*** Invalid Key *** Try again");
         }
+        return false;
+    }
 
-        private void stayMainMenu() {
+    private void stayOnHelp() {
+        HelpView helpMenuView = new HelpView();
+
+        helpMenuView.displayHelpMenueView();
+    }
+
+    private void stayMainMenu() {
         EscapeFromChateauDeLaMisererie.view.MainMenuView mainMenuView = new EscapeFromChateauDeLaMisererie.view.MainMenuView();
 
         mainMenuView.displayMainMenueView();
-        }
-        
-    
+    }
+
 }
-
-

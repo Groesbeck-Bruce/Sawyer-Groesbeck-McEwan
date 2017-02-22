@@ -42,7 +42,7 @@ public class KeyControlTest {
         result = instance.requiredKeys(itemInventory, location);
         //assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        
+
         //Test 3
         System.out.println("Test 3");
         location = 7;

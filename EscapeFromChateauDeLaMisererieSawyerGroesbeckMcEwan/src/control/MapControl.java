@@ -10,5 +10,5 @@ package control;
  * @author bruce
  */
 public class MapControl {
-    
+
 }

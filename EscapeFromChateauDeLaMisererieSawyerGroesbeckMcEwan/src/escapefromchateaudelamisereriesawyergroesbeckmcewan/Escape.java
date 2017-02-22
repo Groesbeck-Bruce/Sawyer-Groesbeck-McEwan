@@ -5,15 +5,11 @@ package escapefromchateaudelamisereriesawyergroesbeckmcewan;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 // Hello this is tim McEwan
 //I think you guys are pretty cool
-
 import EscapeFromChateauDeLaMisererie.view.StartProgramView;
 import model.Player;
 import model.Game;
-
-
 
 // This is Aaron
 // Hello everyone 
@@ -23,8 +19,9 @@ import model.Game;
  * @author aaronsawyer
  */
 public class Escape {
-private static Game currentGame = null;
-private static Player player = null;
+
+    private static Game currentGame = null;
+    private static Player player = null;
 
     public static Game getCurrentGame() {
         return currentGame;
@@ -42,13 +39,11 @@ private static Player player = null;
         Escape.player = player;
     }
 
-
-
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
- 
+
         StartProgramView startProgramView = new StartProgramView();
         startProgramView.displayStartProgramView();
 
@@ -57,13 +52,12 @@ private static Player player = null;
 //    public static void setName(String name) {
 //        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
 //    }
-
     public static void setName(String name) {
         System.out.println("This fired setName");
     }
 
-}       
-        
+}
+
 //        // Aaron Sawyer Bruce Groesbeck Tim McEwan
 //        Player playerOne = new Player();
 //
