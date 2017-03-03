@@ -10,10 +10,11 @@ package EscapeFromChateauDeLaMisererie.view;
  * @author bruce
  */
 public interface ViewInterface {
-    
+
     public void display();
+
     public String getInput();
+
     public boolean doAction(String value);
 
-    
 }

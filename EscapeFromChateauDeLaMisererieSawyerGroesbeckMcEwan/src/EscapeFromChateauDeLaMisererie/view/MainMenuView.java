@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class MainMenuView extends View {
 
     public MainMenuView() {
-            super("\n***"
+        super("\n***"
                 + "\n------------------------------"
                 + "\n | Main Menu                 |"
                 + "\n------------------------------"
@@ -24,14 +24,14 @@ public class MainMenuView extends View {
                 + "\nS - Save Game"
                 + "\nQ - Quit Game"
                 + "\n------------------------------");
-            
+
     }
 }
 
-    //@Override
-    //public boolean doAction(String value) {
-    //    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
- //   }
+//@Override
+//public boolean doAction(String value) {
+//    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//   }
 //}
 /*
     @Override
@@ -48,7 +48,7 @@ public class MainMenuView extends View {
 
     }
  */
-    /*private String getInput() {
+ /*private String getInput() {
         Scanner keyboard = new Scanner(System.in);
         String value = "";
 
@@ -101,4 +101,4 @@ public class MainMenuView extends View {
         helpMenuView.displayHelpMenueView();
     }
 }
-*/
+ */

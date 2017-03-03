@@ -12,56 +12,59 @@ import java.util.Scanner;
  * @author Bruce Groesbeck and Tim McEwan
  */
 public abstract class View implements ViewInterface {
-    
+
     protected String displayMessage;
-    
+
     public View() {
-    
-}
+
+    }
+
     public View(String message) {
         this.displayMessage = message;
     }
+
     @Override
     public void display() {
-        
+
         boolean done = false;
         do {
             String value = this.getInput();
-            if (value.toUpperCase().equals("Q"))
+            if (value.toUpperCase().equals("Q")) {
                 return;
+            }
             done = this.doAction(value);
-        }   while (!done);
-        }
+        } while (!done);
+    }
+
     @Override
-        public String getInput() {     
-        
-            Scanner keyboard = new Scanner(System.in);
-            boolean valid = false;
-            String value = null;
-            
-            while (!valid) {
-                System.out.println("\n*** " + this.displayMessage);
-                
-                value = keyboard.nextLine();
-                value = value.trim();
-                
-               /* if (value.length() < 1) {
+    public String getInput() {
+
+        Scanner keyboard = new Scanner(System.in);
+        boolean valid = false;
+        String value = null;
+
+        while (!valid) {
+            System.out.println("\n*** " + this.displayMessage);
+
+            value = keyboard.nextLine();
+            value = value.trim();
+
+            /* if (value.length() < 1) {
                     System.out.println("\n*** You must enter a value");
                     continue;
                 }
                 break;
                 // 
             //    }
-            */
+             */
             return value;
-            }
-            return (null);
-           
-}
+        }
+        return (null);
 
-@Override
+    }
+
+    @Override
     public boolean doAction(String value) {
-        
 
         value = value.toUpperCase();
 
@@ -83,6 +86,7 @@ public abstract class View implements ViewInterface {
         }
         return false;
     }
+
     private void startNewGame() {
         System.out.println("*** startNewGame function called ***");
     }
@@ -101,4 +105,3 @@ public abstract class View implements ViewInterface {
         helpMenuView.displayHelpMenueView();
     }
 }
-
