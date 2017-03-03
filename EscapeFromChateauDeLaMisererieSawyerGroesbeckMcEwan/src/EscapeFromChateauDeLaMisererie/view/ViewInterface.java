@@ -12,12 +12,8 @@ package EscapeFromChateauDeLaMisererie.view;
 public interface ViewInterface {
     
     public void display();
-    public string getInput();
+    public String getInput();
     public boolean doAction(String value);
 
-    public static class string {
-
-        public string() {
-        }
-    }
+    
 }

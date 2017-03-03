@@ -83,7 +83,7 @@ public class HelpView {
     private void stayMainMenu() {
         EscapeFromChateauDeLaMisererie.view.MainMenuView mainMenuView = new EscapeFromChateauDeLaMisererie.view.MainMenuView();
 
-        mainMenuView.displayMainMenueView();
+        mainMenuView.display();
     }
 
 }

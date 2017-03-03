@@ -11,12 +11,10 @@ import java.util.Scanner;
  *
  * @author Tim McEwan
  */
-public class MainMenuView {
-
-    private final String menu;
+public class MainMenuView extends View {
 
     public MainMenuView() {
-        this.menu = "\n"
+            super("\n***"
                 + "\n------------------------------"
                 + "\n | Main Menu                 |"
                 + "\n------------------------------"
@@ -25,11 +23,22 @@ public class MainMenuView {
                 + "\nH - Get help you noob"
                 + "\nS - Save Game"
                 + "\nQ - Quit Game"
-                + "\n------------------------------";
-
+                + "\n------------------------------");
+            
     }
 
-    void displayMainMenueView() {
+    @Override
+    public boolean doAction(String value) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}
+/*
+    @Override
+    public boolean doAction(String value) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}
+    /*void displayMainMenueView() {
 
         System.out.println("\n" + this.menu);
         String input = this.getInput();
@@ -37,8 +46,8 @@ public class MainMenuView {
         doAction(input);
 
     }
-
-    private String getInput() {
+ */
+    /*private String getInput() {
         Scanner keyboard = new Scanner(System.in);
         String value = "";
 
@@ -48,11 +57,13 @@ public class MainMenuView {
         return value;
     }
 
-    private boolean doAction(String input) {
+    @Override
+    private boolean doAction(String value) {
+        
 
-        input = input.toUpperCase();
+        value = value.toUpperCase();
 
-        switch (input) {
+        switch (value) {
             case "N":
                 this.startNewGame();
                 break;
@@ -89,3 +100,4 @@ public class MainMenuView {
         helpMenuView.displayHelpMenueView();
     }
 }
+*/
