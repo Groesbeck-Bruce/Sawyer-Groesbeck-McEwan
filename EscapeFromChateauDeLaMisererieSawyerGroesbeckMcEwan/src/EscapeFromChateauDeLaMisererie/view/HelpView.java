@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author sudo
  */
-public class HelpView {
+public class HelpView extends View {
 
     /**
      *
@@ -45,8 +45,8 @@ public class HelpView {
         doAction(input);
 
     }
-
-    private String getInput() {
+}
+    /*private String getInput() {
         Scanner keyboard = new Scanner(System.in);
         String value = "";
 
@@ -87,3 +87,4 @@ public class HelpView {
     }
 
 }
+*/

@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Bruce Groesbeck
  */
-public class GameMenuView {
+public class GameMenuView extends View {
 
     static GameMenuView gameMenu;
     private final String menu;
@@ -38,8 +38,8 @@ public class GameMenuView {
         doAction(input);
 
     }
-
-    private String getInput() {
+}
+   /* private String getInput() {
         Scanner keyboard = new Scanner(System.in);
         String value = "";
 
@@ -94,3 +94,4 @@ public class GameMenuView {
         }
     }
 }
+*/

@@ -9,7 +9,7 @@ package EscapeFromChateauDeLaMisererie.view;
  *
  * @author bruce
  */
-public class LiquidChallengeView {
+public class LiquidChallengeView extends View {
     
     private String promptMessage;
     
