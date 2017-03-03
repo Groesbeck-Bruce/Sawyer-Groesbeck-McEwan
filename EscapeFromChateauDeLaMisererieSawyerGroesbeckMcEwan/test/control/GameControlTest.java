@@ -45,7 +45,7 @@ public class GameControlTest {
     public void testCreateNewGame() {
         System.out.println("createNewGame");
         Player player = null;
-        GameControl.createNewGame(player);
+//        GameControl.createNewGame(player);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
