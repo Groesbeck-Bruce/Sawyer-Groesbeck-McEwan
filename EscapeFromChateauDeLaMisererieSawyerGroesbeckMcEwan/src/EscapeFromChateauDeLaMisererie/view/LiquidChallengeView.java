@@ -12,11 +12,15 @@ import java.io.Serializable;
  * @author bruce
  */
 public class LiquidChallengeView extends View {
-    
+
+    static void LiquidChallenge() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     private String promptMessage;
-    
+
     public LiquidChallengeView() {
-        
+
         this.promptMessage = "\n** Enter length, width and height";
         this.displayBanner();
     }
@@ -24,55 +28,57 @@ public class LiquidChallengeView extends View {
     private void displayBanner() {
         System.out.println("\n ** Welcome to the Liquid Challenge");
     }
+
     public class LiquidChallenge implements Serializable {
 
-    private String playProblem;
-    private double length;
-    private double width;
-    private double height;
-    private double total;
+        private String playProblem;
+        private double length;
+        private double width;
+        private double height;
+        private double total;
 
-    public LiquidChallenge() {
-    }
-    public String getPlayProblem() {
-        return playProblem;
-    }
+        public LiquidChallenge() {
+        }
 
-    public void setPlayProblem(String playProblem) {
-        this.playProblem = playProblem;
-    }
+        public String getPlayProblem() {
+            return playProblem;
+        }
 
-    public double getLength() {
-        return length;
-    }
+        public void setPlayProblem(String playProblem) {
+            this.playProblem = playProblem;
+        }
 
-    public void setLength(double length) {
-        this.length = length;
-    }
+        public double getLength() {
+            return length;
+        }
 
-    public double getWidth() {
-        return width;
-    }
+        public void setLength(double length) {
+            this.length = length;
+        }
 
-    public void setWidth(double width) {
-        this.width = width;
-    }
+        public double getWidth() {
+            return width;
+        }
 
-    public double getHeight() {
-        return height;
-    }
+        public void setWidth(double width) {
+            this.width = width;
+        }
 
-    public void setHeight(double height) {
-        this.height = height;
-    }
+        public double getHeight() {
+            return height;
+        }
 
-    public double getTotal() {
-        return total;
-    }
+        public void setHeight(double height) {
+            this.height = height;
+        }
 
-    public void setTotal(double total) {
-        this.total = total;
-    }
+        public double getTotal() {
+            return total;
+        }
 
-}
+        public void setTotal(double total) {
+            this.total = total;
+        }
+
+    }
 }

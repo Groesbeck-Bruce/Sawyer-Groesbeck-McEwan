@@ -12,7 +12,7 @@ import java.util.Objects;
  *
  * @author bruce
  */
-public class LiquidChallenge implements Serializable {
+public class LiquidChallenge extends View implements Serializable {
 
     private String playProblem;
     private double length;

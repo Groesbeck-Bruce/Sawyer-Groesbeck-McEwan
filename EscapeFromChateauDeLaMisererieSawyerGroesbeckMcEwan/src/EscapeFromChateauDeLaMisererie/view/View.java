@@ -6,6 +6,7 @@
 package EscapeFromChateauDeLaMisererie.view;
 
 import java.util.Scanner;
+import model.LiquidChallenge;
 
 /**
  *
@@ -103,5 +104,12 @@ public abstract class View implements ViewInterface {
         HelpView helpMenuView = new HelpView();
 
         helpMenuView.displayHelpMenueView();
+    }
+
+    private void displayLiquidChallenge() {
+
+        LiquidChallenge helpMenuView = new LiquidChallenge();
+
+        LiquidChallengeView.LiquidChallenge();
     }
 }
