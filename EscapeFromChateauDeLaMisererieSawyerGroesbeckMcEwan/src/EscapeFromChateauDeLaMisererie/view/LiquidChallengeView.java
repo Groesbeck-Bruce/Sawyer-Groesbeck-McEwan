@@ -14,7 +14,7 @@ import java.io.Serializable;
 public class LiquidChallengeView extends View {
 
     static void LiquidChallenge() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println();s
     }
 
     private String promptMessage;
