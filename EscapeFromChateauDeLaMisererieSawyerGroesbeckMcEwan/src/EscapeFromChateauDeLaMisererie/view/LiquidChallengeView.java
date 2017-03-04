@@ -14,7 +14,7 @@ import java.io.Serializable;
 public class LiquidChallengeView extends View {
 
     static void LiquidChallenge() {
-        System.out.println();s
+        System.out.println();
     }
 
     private String promptMessage;
