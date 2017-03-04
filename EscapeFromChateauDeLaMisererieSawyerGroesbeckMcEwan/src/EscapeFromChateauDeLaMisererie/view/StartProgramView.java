@@ -91,6 +91,18 @@ public class StartProgramView {
         MainMenuView mainMenuView = new MainMenuView();
 
         mainMenuView.display();
+
+        GameMenuView gameMenuView = new GameMenuView();
+
+        gameMenuView.display();
+        
+        LiquidChallengeView liquidChallengeView = new LiquidChallengeView();
+        
+        liquidChallengeView.display();
+        
+        AreaChallengeView areaChallengeView = new AreaChallengeView();
+        
+        areaChallengeView.display();
     }
 
 }
