@@ -103,6 +103,10 @@ public class StartProgramView {
         AreaChallengeView areaChallengeView = new AreaChallengeView();
         
         areaChallengeView.display();
+        
+        ArmoryLockChallengeView armoryLockChallengeView = new ArmoryLockChallengeView();
+        
+        armoryLockChallengeView.display();
     }
 
 }
