@@ -38,25 +38,7 @@ public class HelpView extends View {
 
     }
 
-    void displayHelpMenueView() {
-        System.out.println("\n" + this.helpmenu);
-        String input = this.getInput();
-
-        doAction(input);
-
-    }
-}
-    /*private String getInput() {
-        Scanner keyboard = new Scanner(System.in);
-        String value = "";
-
-        value = keyboard.nextLine();
-        value = value.trim();
-
-        return value;
-    }
-
-    private boolean doAction(String input) {
+    public boolean doAction(String input) {
 
         input = input.toUpperCase();
 
@@ -77,7 +59,7 @@ public class HelpView extends View {
     private void stayOnHelp() {
         HelpView helpMenuView = new HelpView();
 
-        helpMenuView.displayHelpMenueView();
+        helpMenuView.display();
     }
 
     private void stayMainMenu() {
@@ -85,6 +67,18 @@ public class HelpView extends View {
 
         mainMenuView.display();
     }
+}
+/*private String getInput() {
+        Scanner keyboard = new Scanner(System.in);
+        String value = "";
+
+        value = keyboard.nextLine();
+        value = value.trim();
+
+        return value;
+    }
+
+    
 
 }
-*/
+ */

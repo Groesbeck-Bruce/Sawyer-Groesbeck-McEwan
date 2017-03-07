@@ -30,26 +30,7 @@ public class GameMenuView extends View {
 
     }
 
-    void displayGameMenueView() {
-
-        System.out.println("\n" + this.menu);
-        String input = this.getInput();
-
-        doAction(input);
-
-    }
-}
-   /* private String getInput() {
-        Scanner keyboard = new Scanner(System.in);
-        String value = "";
-
-        value = keyboard.nextLine();
-        value = value.trim();
-
-        return value;
-    }
-
-    private boolean doAction(String input) {
+    public boolean doAction(String input) {
 
         input = input.toUpperCase();
 
@@ -88,10 +69,4 @@ public class GameMenuView extends View {
         System.out.println("*** Save Game***");
     }
 
-    static class gameMenu {
-
-        public gameMenu() {
-        }
-    }
 }
-*/

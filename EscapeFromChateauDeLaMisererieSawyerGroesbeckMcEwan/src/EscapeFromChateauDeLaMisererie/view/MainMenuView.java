@@ -26,41 +26,9 @@ public class MainMenuView extends View {
                 + "\n------------------------------");
 
     }
-}
 
-//@Override
-//public boolean doAction(String value) {
-//    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//   }
-//}
-/*
     @Override
     public boolean doAction(String value) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-}
-    /*void displayMainMenueView() {
-
-        System.out.println("\n" + this.menu);
-        String input = this.getInput();
-
-        doAction(input);
-
-    }
- */
- /*private String getInput() {
-        Scanner keyboard = new Scanner(System.in);
-        String value = "";
-
-        value = keyboard.nextLine();
-        value = value.trim();
-
-        return value;
-    }
-
-    @Override
-    private boolean doAction(String value) {
-        
 
         value = value.toUpperCase();
 
@@ -98,7 +66,6 @@ public class MainMenuView extends View {
     private void displayHelpMenu() {
         HelpView helpMenuView = new HelpView();
 
-        helpMenuView.displayHelpMenueView();
+        helpMenuView.display();
     }
 }
- */

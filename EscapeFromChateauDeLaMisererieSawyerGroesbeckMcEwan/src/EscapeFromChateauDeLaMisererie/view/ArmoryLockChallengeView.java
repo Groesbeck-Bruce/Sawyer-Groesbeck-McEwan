@@ -29,6 +29,11 @@ public class ArmoryLockChallengeView extends View {
         System.out.println("\n ** Welcome to the Armory Lock Challenge");
     }
 
+    @Override
+    public boolean doAction(String value) {
+        return false;
+    }
+
     public class ArmoryLockChallenge implements Serializable {
 
         private String playProblem;

@@ -29,6 +29,11 @@ public class LiquidChallengeView extends View {
         System.out.println("\n ** Welcome to the Liquid Challenge");
     }
 
+    @Override
+    public boolean doAction(String value) {
+        return false;
+    }
+
     public class LiquidChallenge implements Serializable {
 
         private String playProblem;
