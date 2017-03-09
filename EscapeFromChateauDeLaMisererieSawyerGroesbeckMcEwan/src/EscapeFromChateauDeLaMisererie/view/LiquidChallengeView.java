@@ -26,7 +26,12 @@ public class LiquidChallengeView extends View {
     }
 
     private void displayBanner() {
-        System.out.println("\n ** Welcome to the Liquid Challenge");
+        System.out.println("\n ** Welcome to the Liquid Challenge"
+                          + "+\n ** Enter the correct formula to "
+                          + "pass the challenge to get a key to  "
+                          + "open the door as you try to escape  "
+                          + "the prison. Remember to watch our for"
+                          + "warden as well as the guards");
     }
 
     @Override
