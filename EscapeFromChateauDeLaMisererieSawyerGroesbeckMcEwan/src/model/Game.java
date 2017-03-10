@@ -18,7 +18,17 @@ public class Game implements Serializable {
     private double totalTime;
     private Map map;
     private Player player;
+    private Item[] inventory;
+    
 
+    public Item[] getInventory() {
+        return inventory;
+    }
+
+    public void setInventory(Item[] inventory) {
+        this.inventory = inventory;
+    }
+    
     public Game() {
     }
 

@@ -14,6 +14,15 @@ import java.util.Objects;
  */
 public class Item implements Serializable {
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    private String description;
     private String inventoryType;
     private Integer quantityInStock;
     private Integer requiredAmount;

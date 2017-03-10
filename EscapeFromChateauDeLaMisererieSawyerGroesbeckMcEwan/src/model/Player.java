@@ -17,7 +17,7 @@ public class Player implements Serializable {
 
     private String name;
     private double bestTime;
-//    private List<Item> inventroy;
+    private List<Item> inventroy;
 
     public Player() {
     }

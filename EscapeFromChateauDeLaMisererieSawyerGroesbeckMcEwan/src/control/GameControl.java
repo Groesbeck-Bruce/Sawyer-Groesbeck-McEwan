@@ -9,6 +9,21 @@ import model.*;
  */
 public class GameControl {
 
+    public static void createNewGame(Player player) {
+
+        Game game = new Game(); //create new game
+        Escape.setCurrentGame(game); //save in escape
+
+        game.setPlayer(player);
+
+        Item[] inventoryList = createList();
+
+        Map map = MapControl.createMap();
+        game.setMap(map);
+
+        MapControl.movePlayersToStartingLocation(map, player);
+    }
+
     public static Player createPlayer(String name) {
         if (name == null) {
             return null;
@@ -20,9 +35,20 @@ public class GameControl {
         return player;
     }
 
+    private static Item[] createList() {
+
+        return new Item[0];
+    }
+
     private static class startNewGame {
 
         public startNewGame() {
+        }
+    }
+
+    private static class createNewGame {
+
+        public createNewGame() {
         }
     }
 

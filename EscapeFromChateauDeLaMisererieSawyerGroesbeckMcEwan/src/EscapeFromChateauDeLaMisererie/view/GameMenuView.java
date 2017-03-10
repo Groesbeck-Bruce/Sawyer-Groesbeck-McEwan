@@ -56,7 +56,9 @@ public class GameMenuView extends View {
     private void startNewGame() {
         System.out.println("*** Start a New Game ***");
     }
-
+    private void createNewGame() {
+        System.out.println("*** New Game ***");
+    }
     private void startExistingGame() {
         System.out.println("*** Start Existing Game ***");
     }

@@ -6,6 +6,7 @@
 package model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  *
@@ -17,6 +18,7 @@ public class Location implements Serializable {
     private int column;
     private boolean visited;
     private boolean winGame;
+    private ArrayList<Player> players;
 
     public Location() {
     }

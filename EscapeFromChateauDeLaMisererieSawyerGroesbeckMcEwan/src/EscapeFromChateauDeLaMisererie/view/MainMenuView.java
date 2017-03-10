@@ -5,6 +5,8 @@
  */
 package EscapeFromChateauDeLaMisererie.view;
 
+import control.GameControl;
+import escapefromchateaudelamisereriesawyergroesbeckmcewan.Escape;
 import java.util.Scanner;
 
 /**
@@ -53,6 +55,12 @@ public class MainMenuView extends View {
 
     private void startNewGame() {
         System.out.println("*** startNewGame function called ***");
+        // create a new game
+        GameControl.createNewGame(Escape.getPlayer());
+        
+        //display the game menu
+        GameMenuView gameMenu = new GameMenuView();
+        gameMenu.display();
     }
 
     private void startExistingGame() {
