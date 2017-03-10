@@ -13,25 +13,23 @@ import java.util.Scanner;
  */
 public class GameMenuView extends View {
 
-    static GameMenuView gameMenu;
-    private final String menu;
-
     public GameMenuView() {
-        this.menu = "\n"
+        super("\n"
                 + "\n------------------------------"
-                + "\n | Main Menu                 |"
+                + "\n | Game Menu                 |"
                 + "\n------------------------------"
-                + "\nN - Start Game"
+                + "\nN - action"
                 + "\nG - Get and start saved game"
                 + "\nH - Get help you noob"
                 + "\nS - Save Game"
                 + "\nQ - Quit Game"
-                + "\n------------------------------";
+                + "\n------------------------------");
         //TODO add option to view map
         //TODO add options to move around map
 
     }
 
+    @Override
     public boolean doAction(String input) {
 
         input = input.toUpperCase();

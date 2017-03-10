@@ -39,28 +39,23 @@ public abstract class View implements ViewInterface {
 
     @Override
     public String getInput() {
-
-        Scanner keyboard = new Scanner(System.in);
-        boolean valid = false;
-        String value = null;
+        Scanner keyboard = new Scanner(System.in); //get infile for Keyboard
+        boolean valid = false; //initialize to not valid
+        String value = ""; //value to be returned
 
         while (!valid) {
-            System.out.println("\n*** " + this.displayMessage);
+            System.out.println("\n" + this.displayMessage);
 
-            value = keyboard.nextLine();
-            value = value.trim();
+            value = keyboard.nextLine(); //get next line typed on keyboard
+            value = value.trim(); //trim off leading and trailing blanks
 
-            /* if (value.length() < 1) {
-                    System.out.println("\n*** You must enter a value");
-                    continue;
-                }
-                break;
-                // 
-            //    }
-             */
-            return value;
+            if (value.length() < 1) { // value is blank
+                System.out.println("\nInvalid: entry required.");
+                continue;
+            }
+            break; //end the loop
         }
-        return (null);
+        return value; //return entered value
 
     }
 }

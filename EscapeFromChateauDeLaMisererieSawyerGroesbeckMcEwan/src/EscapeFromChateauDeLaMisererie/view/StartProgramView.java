@@ -6,6 +6,7 @@
 package EscapeFromChateauDeLaMisererie.view;
 
 import control.GameControl;
+import escapefromchateaudelamisereriesawyergroesbeckmcewan.Escape;
 import java.util.Scanner;
 import model.Player;
 
@@ -72,6 +73,7 @@ public class StartProgramView {
             return false;
         }
         Player player = GameControl.createPlayer(playersName);
+        Escape.setPlayer(player);
         if (player == null) {
             System.out.println("\nError creating the player.");
             return false;
