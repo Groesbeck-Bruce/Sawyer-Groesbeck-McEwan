@@ -7,22 +7,25 @@ package control;
 
 import model.Map;
 import model.Player;
+
 /**
  *
  * @author bruce
  */
 public class MapControl {
+
     public static Map createMap() {
-        
-        Map map = null;
-        
-        System.out.println("\n*** createMap() called ***");
+        //TODO implement this function
+        Map map = new Map();
+
+        map.init();
         
         return map;
-        
-        
     }
-    public static void movePlayersToStartingLocation(Map map,Player player) {
+
+    public static void movePlayersToStartingLocation(Map map, Player player) {
+        player.setLocation(map.getLocationAt(0, 0));
         
+        //TODO more if you want
     }
 }

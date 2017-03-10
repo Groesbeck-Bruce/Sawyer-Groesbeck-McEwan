@@ -18,8 +18,25 @@ public class Player implements Serializable {
     private String name;
     private double bestTime;
     private List<Item> inventroy;
+    Location location;
 
     public Player() {
+    }
+
+    public List<Item> getInventroy() {
+        return inventroy;
+    }
+
+    public void setInventroy(List<Item> inventroy) {
+        this.inventroy = inventroy;
+    }
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
     }
 
     public String getName() {
@@ -38,12 +55,6 @@ public class Player implements Serializable {
         this.bestTime = bestTime;
     }
 
-//    public List getInventroy() {
-//        return inventroy;
-//    }
-//    public void setInventroy(List inventroy) {
-//        this.inventroy = inventroy;
-//    }
     @Override
     public int hashCode() {
         int hash = 7;

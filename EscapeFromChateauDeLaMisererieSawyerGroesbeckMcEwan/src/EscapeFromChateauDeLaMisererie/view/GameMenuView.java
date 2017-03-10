@@ -27,6 +27,8 @@ public class GameMenuView extends View {
                 + "\nS - Save Game"
                 + "\nQ - Quit Game"
                 + "\n------------------------------";
+        //TODO add option to view map
+        //TODO add options to move around map
 
     }
 
@@ -70,5 +72,15 @@ public class GameMenuView extends View {
     private void saveGame() {
         System.out.println("*** Save Game***");
     }
+    
+    private void viewMap() {
+        //TODO iterate over map and output locations
+    }
+    
+    private void moveNorth() {
+        //TODO update the player's location with "current location row - 1"
+    }
+    
+    //TODO other directions
 
 }

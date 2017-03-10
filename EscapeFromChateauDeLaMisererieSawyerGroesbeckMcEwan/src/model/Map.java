@@ -21,6 +21,27 @@ public class Map implements Serializable {
     public Map() {
     }
 
+    public void init() {
+        rowCount = 5;
+        columnCount = 5;
+        
+        location = new Location[rowCount][columnCount];
+        //TODO iterate over rows and columns and create locations in a loop (or two)
+        
+        //Build out a location
+        Location loc = new Location();
+        loc.setRow(0);
+        loc.setColumn(0);
+        loc.setVisited(false);
+        loc.setWinGame(false);
+        
+        location[0][0] = loc;
+    }
+    
+    public Location getLocationAt(int row, int col) {
+        return location[row][col];
+    }
+
     public int getRowCount() {
         return rowCount;
     }

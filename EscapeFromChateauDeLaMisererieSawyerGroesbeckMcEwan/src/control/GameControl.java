@@ -16,8 +16,10 @@ public class GameControl {
 
         game.setPlayer(player);
 
-        Item[] inventoryList = createList();
+        //Create items for the game
+        Item[] items = ItemControl.createItemList();
 
+        //Create the map for the game
         Map map = MapControl.createMap();
         game.setMap(map);
 
@@ -33,48 +35,5 @@ public class GameControl {
 
         Escape.setName(name);
         return player;
-    }
-
-    private static Item[] createList() {
-
-        return new Item[0];
-    }
-
-    private static class startNewGame {
-
-        public startNewGame() {
-        }
-    }
-
-    private static class createNewGame {
-
-        public createNewGame() {
-        }
-    }
-
-    private static class intializeMap {
-
-        public intializeMap() {
-        }
-    }
-
-    private static class saveGame {
-
-        public saveGame() {
-
-        }
-
-        private static class retrieveGame {
-
-            public retrieveGame() {
-
-            }
-
-            private static class createNewPlayer {
-
-                public createNewPlayer() {
-                }
-            }
-        }
     }
 }

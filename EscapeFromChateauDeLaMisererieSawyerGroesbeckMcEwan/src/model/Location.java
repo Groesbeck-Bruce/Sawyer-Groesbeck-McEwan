@@ -18,9 +18,17 @@ public class Location implements Serializable {
     private int column;
     private boolean visited;
     private boolean winGame;
-    private ArrayList<Player> players;
+    private Player players;
 
     public Location() {
+    }
+
+    public Player getPlayers() {
+        return players;
+    }
+
+    public void setPlayers(Player players) {
+        this.players = players;
     }
 
     public int getRow() {
