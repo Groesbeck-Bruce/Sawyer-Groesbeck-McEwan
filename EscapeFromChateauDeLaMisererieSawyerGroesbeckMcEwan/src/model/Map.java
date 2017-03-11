@@ -10,7 +10,7 @@ import java.util.Objects;
 
 /**
  *
- * @author: Tim McEwan
+ * @author: Bruce
  */
 public class Map implements Serializable {
 
@@ -20,8 +20,23 @@ public class Map implements Serializable {
 
     public Map() {
     }
-
-    public void init() {
+    
+    public Map(int rowCount, int columnCount) {
+        
+        if (rowCount < 1 || columnCount < 1) {
+        System.out.println("The number of rows and columns must be > zero");
+        return;
+        }
+        
+    this.rowCount = rowCount;
+    this.columnCount = columnCount;
+    
+    //create 2-D array for location objects
+    this.location = new Location[rowCount][columnCount];
+    
+    for (int row = 0; row < rowCount; row++) {
+        for(int column = 0; column <columnCount; column++) {
+    }    
         rowCount = 5;
         columnCount = 5;
         
@@ -35,11 +50,18 @@ public class Map implements Serializable {
         loc.setVisited(false);
         loc.setWinGame(false);
         
-        location[0][0] = loc;
+        location[rowCount][columnCount] = loc;
     }
-    
-    public Location getLocationAt(int row, int col) {
-        return location[row][col];
+    }
+
+    /**
+     *
+     * @param row
+     * @param column
+     * @return
+     */
+    public Location getLocation(int row, int column) {
+        return location[row][column];
     }
 
     public int getRowCount() {
@@ -90,6 +112,10 @@ public class Map implements Serializable {
             return false;
         }
         return true;
+    }
+
+    public void init() {
+            System.out.println();
     }
 
 }

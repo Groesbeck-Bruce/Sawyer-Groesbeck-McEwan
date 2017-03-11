@@ -5,6 +5,7 @@
  */
 package control;
 
+import model.Location;
 import model.Map;
 import model.Player;
 
@@ -15,17 +16,25 @@ import model.Player;
 public class MapControl {
 
     public static Map createMap() {
+        
         //TODO implement this function
         Map map = new Map();
-
-        map.init();
         
+        map.init();
+
         return map;
     }
 
+    public void init() {
+        int rowCount = 5;
+        int columnCount = 5;
+        location Location = new location();
+        Location location = new Location();
+    }
+
     public static void movePlayersToStartingLocation(Map map, Player player) {
-        player.setLocation(map.getLocationAt(0, 0));
-        
+        player.setLocation(map.getLocation(0, 0));
+
         //TODO more if you want
     }
 }

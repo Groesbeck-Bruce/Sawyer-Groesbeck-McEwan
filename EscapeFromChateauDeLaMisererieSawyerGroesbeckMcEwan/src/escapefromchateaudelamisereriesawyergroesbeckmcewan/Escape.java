@@ -53,7 +53,7 @@ public class Escape {
 //        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
 //    }
     public static void setName(String name) {
-        System.out.println("This fired setName");
+        System.out.println("*** setName ***");
     }
 
 }
