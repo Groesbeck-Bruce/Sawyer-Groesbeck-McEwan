@@ -22,6 +22,8 @@ public class GameControl {
         //Create the map for the game
         Map map = MapControl.createMap();
         game.setMap(map);
+        
+        
 
         MapControl.movePlayersToStartingLocation(map, player);
     }

@@ -17,6 +17,7 @@ public class Map implements Serializable {
     private int rowCount;
     private int columnCount;
     private Location[][] location;
+    private int[] Map;
 
     public Map() {
     }
@@ -42,7 +43,15 @@ public class Map implements Serializable {
         
         location = new Location[rowCount][columnCount];
         //TODO iterate over rows and columns and create locations in a loop (or two)
-        
+        //start point
+        location[0][0].setColumn(Map[Location.cell()]);
+        location[0][1].setColumn(Map[Location.kitchen()]);
+        location[0][2].setColumn(Map[Location.dungeon()]);
+        location[0][3].setColumn(Map[Location.gateHouse()]);
+        location[0][4].setColumn(Map[Location.guardTower]);
+        location[0][5].setColumn(Map[Location.armory()]);
+        location[0][0].setRow(Map[Location.cell()]);
+        location[0][1].setRow(Map[Location.kitchen()]);
         //Build out a location
         Location loc = new Location();
         loc.setRow(0);

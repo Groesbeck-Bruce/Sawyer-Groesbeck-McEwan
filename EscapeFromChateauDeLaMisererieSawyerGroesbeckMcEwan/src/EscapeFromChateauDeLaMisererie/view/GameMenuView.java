@@ -25,12 +25,22 @@ public class GameMenuView extends View {
                 + "\nQ - Quit Game"
                 + "\n------------------------------");
         //TODO add option to view map
-        //TODO add options to move around map
-
+    //public void displayMap() {
+      
+    //}
     }
 
     @Override
-    public boolean doAction(String input) {
+    public boolean doAction(String value) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}
+    //TODO add options to move around map
+
+
+
+/*@Override
+        public boolean doAction(String input) {
 
         input = input.toUpperCase();
 
@@ -70,15 +80,15 @@ public class GameMenuView extends View {
     private void saveGame() {
         System.out.println("*** Save Game***");
     }
-    
-    private void viewMap() {
+    */
+    //private void viewMap() {
         //TODO iterate over map and output locations
-    }
+    //}
     
-    private void moveNorth() {
+    //private void moveNorth() {
         //TODO update the player's location with "current location row - 1"
-    }
+    //}
     
     //TODO other directions
 
-}
+//}
