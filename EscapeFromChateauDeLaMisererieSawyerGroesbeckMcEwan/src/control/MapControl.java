@@ -5,6 +5,10 @@
  */
 package control;
 
+import escapefromchateaudelamisereriesawyergroesbeckmcewan.Escape;
+import exception.MapControlException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import model.Location;
 import model.Map;
 import model.Player;
@@ -14,6 +18,8 @@ import model.Player;
  * @author bruce
  */
 public class MapControl {
+
+    private static String coordinates;
 
     public static Map createMap() {
         
@@ -32,9 +38,38 @@ public class MapControl {
         Location location = new Location();
     }
 
-    public static void movePlayersToStartingLocation(Map map, Player player) {
+    public static int movePlayersToStartingLocation(Map map, Player player) {
         player.setLocation(map.getLocation(0, 0));
+        return 5; 
+    }
+       /* Map map = Escape.getCurrentGame().getMap();
+        int newRow = coordinates.x-1;
+        int newColumn = coordinates.y-1;
+        
+        if (newRow < 0 || newRow >= map.getRowCount() ||
+            newColumn < 0 || newColumn >= map.getColumnCount()) {
+            try {
+                throw new MapControlException("Can not move player to location"
+                        +coordinates.x + "," + coordinates.y
+            } catch (MapControlException ex) {
+                Logger.getLogger(MapControl.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+                                            +"because that location is outside"
+                                            +"the bounds of the map");
+           
+        return 0;    
+        }
 
         //TODO more if you want
+
+    private static  coordinates {
+
+        private static int x;
+        private static int y;
+
+        public MapControl() {
+        }*/
     }
-}
+    
+
