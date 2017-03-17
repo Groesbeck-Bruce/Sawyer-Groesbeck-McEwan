@@ -17,7 +17,7 @@ import model.Player;
  *
  * @author bruce
  */
-public class MapControl {
+public class MapControl extends Exception {
 
     private static String coordinates;
 
